@@ -355,14 +355,37 @@ def detect_ner_with_hf_model(sentence, src_lang,  tag_type={'PERSON', 'PUBLIC_FI
     return ners
 
 
-def spacy_ner(docs, nlp, stopwords, spacy_weight, src_lang, extra_weight=1.0, text_key=None, ner_key=None, signal='spacy'):
+def spacy_ner(docs, src_lang="en", nlp=None, stopwords=None, spacy_weight=1.9, extra_weight=1.0, text_key=None, ner_key=None, signal='spacy'):
       """
       Use the spacy models to create mentions w/ NER
       """
       #print ("spacy_ner")
-      if True:
-        if not nlp:
-          return
+      if  nlp is None:
+      #init spacy pipeline
+      if src_lang == 'en':
+        nlp = self.en_spacy_nlp
+      elif src_lang == 'zh':
+        try:
+          nlp = spacy.load('zh_core_web_sm')
+        except:
+          pass
+      elif src_lang == 'pt':
+        try:
+          nlp = spacy.load('pt_core_news_sm')
+        except:
+          pass
+      elif src_lang == 'fr':
+        try:
+          nlp = spacy.load('fr_core_news_sm')
+        except:
+          pass
+      elif src_lang == 'ca':
+        try:
+          nlp = spacy.load('ca_core_news_sm')
+        except:
+          pass
+    
+      if nlp is not None:
         if stopwords is None:
           stopwords = set(stopwords.get(src_lang, []))
         offset_key=f'{src_lang}_offset'
