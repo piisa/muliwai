@@ -1,5 +1,5 @@
 # Intro
-This is a fork and clone of https://github.com/ontocord/muliwai  but which only includes PII prpcessing functionality. We can expperiment with different ways to creaate a PII framework that can interoperate with other PII libraries such as Presidio.
+This is a fork and clone of https://github.com/ontocord/muliwai  that only includes PII prpcessing functionality. We can expperiment with different ways to creaate a PII framework that can interoperate with other PII libraries such as Presidio.
 
 # Disclaimer
 While we have code to detect and anonymize PII in this library, this library is NOT intended as a production ready general PII protection engine. This is a WIP and for experimentation only.
