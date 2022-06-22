@@ -1,5 +1,5 @@
 # Intro
-This is a clone of https://github.com/ontocord/muliwai  that only includes PII prpcessing functionality. We can expperiment with different ways to create a PII framework that can interoperate with other PII libraries such as Presidio.
+This is a clone of original https://github.com/ontocord/muliwai text augmentation code that only includes PII prpcessing functionality. The text augmentation code has been moved to https://github.com/ontocord/muliwai. The muliwai repo now has code for doing PII only. We can experiment with different ways to create a PII framework that can interoperate with other PII libraries such as Presidio. See also https://github.com/piisa/piisa/blob/main/docs/specs.md
 
 # Disclaimer
 While we have code to detect and anonymize PII in this library, this library is NOT intended as a production ready general PII protection engine. This is a WIP and for experimentation only.
