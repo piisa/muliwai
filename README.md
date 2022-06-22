@@ -1,5 +1,9 @@
 # Intro
-This is a clone of original https://github.com/ontocord/muliwai text augmentation code that only includes PII prpcessing functionality. The text augmentation code has been moved to https://github.com/ontocord/muliwai. The muliwai repo now has code for doing PII only. We can experiment with different ways to create a PII framework that can interoperate with other PII libraries such as Presidio. See also https://github.com/piisa/piisa/blob/main/docs/specs.md
+
+Muliwai (pronounced: mu-lee-why, meaning river in Hawaiian) is a library that includes PII prpcessing functionality. The original muliwai text augmentation code has been moved to https://github.com/ontocord/rio. The muliwai repo now has code only for doing PII only. It is intended for experimentation with different ways to create a PII framework that can interoperate with other PII libraries such as Presidio. See also https://github.com/piisa/piisa/blob/main/docs/specs.md
+
+# What is it
+Muliwai was written in part to support the privacy data-tooling efforts of the BigScience workshop (https://github.com/bigscience-workshop/data_tooling) and the PII hackathon conducted by the AISC community (https://github.com/Aggregate-Intellect/bigscience_aisc_pii_detection), but has grown beyond this. There are several utilities for performing NER and assocaited augmentation and anonymization. In theory, Muliwai can do NER in most of the languages supported by XLMRoberta, however, we have not tested various languages beyond: ar, ur, bn, hi, eu, ca, vi, zh, fr, id, es, pt,  sw, yo. 
 
 # Disclaimer
 While we have code to detect and anonymize PII in this library, this library is NOT intended as a production ready general PII protection engine. This is a WIP and for experimentation only.
