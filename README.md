@@ -8,7 +8,7 @@ Muliwai was written in part to support the privacy data-tooling efforts of the B
 
 # Installing
 
-Install the below which will enable spacy for other languages. Neuralcoref will not be installed. You can also load a larger spacy model for more accuracy but more memory.
+Install the below which will enable spacy for other languages. You can also load a larger spacy model for more accuracy but more memory.
 ```
 git clone https://github.com/ontocord/muliwai
 pip install https://github.com/kpu/kenlm/archive/master.zip
@@ -45,7 +45,7 @@ While we have code to detect and anonymize PII in this library, this library is 
 - The TurkuNLP sample data is based on OSCAR and mc4. See the information uder turkunlp_data for more details.
 
 # Contributors
-We welcome all contributions. Please feel free to send a PR. Please follow the code of conduct: https://github.com/ontocord/rio/blob/main/CODE_OF_CONDUCT.md 
+We welcome all contributions. Please feel free to send a PR. Please follow the code of conduct: https://github.com/ontocord/muliwai/blob/main/CODE_OF_CONDUCT.md 
 Special thanks to these people not just for code contributions but for comments and reviews (in no particular order): 
 - @dadelani
 - @edugp 
