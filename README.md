@@ -41,7 +41,7 @@ cp /usr/local/lib/libpostal.so /usr/lib/libpostal.so.1
 While we have code to detect and anonymize PII in this library, this library is NOT intended as a production ready general PII protection engine. This is a WIP and for experimentation only.
 
 # License
-- The source code authored by Ontocord LLC and contributed by contributors of this project is licensed under Apache 2.0.
+- The source code authored is licensed under Apache 2.0.
 - The TurkuNLP sample data is based on OSCAR and mc4. See the information uder turkunlp_data for more details.
 
 # Contributors
