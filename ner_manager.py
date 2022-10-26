@@ -361,30 +361,30 @@ def spacy_ner(docs, src_lang="en", nlp=None, stopwords=None, spacy_weight=1.9, e
       """
       #print ("spacy_ner")
       if  nlp is None:
-      #init spacy pipeline
-      if src_lang == 'en':
-        nlp = self.en_spacy_nlp
-      elif src_lang == 'zh':
-        try:
-          nlp = spacy.load('zh_core_web_sm')
-        except:
-          pass
-      elif src_lang == 'pt':
-        try:
-          nlp = spacy.load('pt_core_news_sm')
-        except:
-          pass
-      elif src_lang == 'fr':
-        try:
-          nlp = spacy.load('fr_core_news_sm')
-        except:
-          pass
-      elif src_lang == 'ca':
-        try:
-          nlp = spacy.load('ca_core_news_sm')
-        except:
-          pass
-    
+          #init spacy pipeline
+          if src_lang == 'en':
+            nlp = self.en_spacy_nlp
+          elif src_lang == 'zh':
+            try:
+              nlp = spacy.load('zh_core_web_sm')
+            except:
+              pass
+          elif src_lang == 'pt':
+            try:
+              nlp = spacy.load('pt_core_news_sm')
+            except:
+              pass
+          elif src_lang == 'fr':
+            try:
+              nlp = spacy.load('fr_core_news_sm')
+            except:
+              pass
+          elif src_lang == 'ca':
+            try:
+              nlp = spacy.load('ca_core_news_sm')
+            except:
+              pass
+
       if nlp is not None:
         if stopwords is None:
           stopwords = set(stopwords.get(src_lang, []))
