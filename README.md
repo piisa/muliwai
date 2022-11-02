@@ -42,7 +42,6 @@ While we have code to detect and anonymize PII in this library, this library is 
 
 # License
 - The source code authored is licensed under Apache 2.0.
-- The TurkuNLP sample data is based on OSCAR and mc4. See the information uder turkunlp_data for more details.
 
 # Contributors
 We welcome all contributions. Please feel free to send a PR. Please follow the code of conduct: https://github.com/ontocord/muliwai/blob/main/CODE_OF_CONDUCT.md 
